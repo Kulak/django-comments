@@ -35,7 +35,7 @@ def submit_comment(request):
                 comment.user = request.user
                 
             # comment.status = moderator.get_comment_status(request, comment)
-            comment.status = Comment.APPROVED
+            comment.status = Comment.NEW
             comment.save()
             
             

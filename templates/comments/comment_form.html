@@ -1,5 +1,5 @@
-<form action="{% url comments.submit %}" method="post">
+<form action="{% url "comments.submit" %}" method="post">{% csrf_token %}
 <table>{{ comment_form }}</table>
-<p class="help">Format comments with <a href="http://en.wikipedia.org/wiki/Markdown" target="_blank">markdown</a>.  Raw HTML will be removed.</p>
+<p class="help">Note: Raw HTML will be removed.</p>
 <p><input type="submit" value="Submit &raquo;" /></p>
 </form>

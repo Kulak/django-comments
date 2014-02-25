@@ -32,7 +32,7 @@ class Comment(models.Model):
     user = models.ForeignKey(User, blank=True, null=True, editable=False)
     name = models.CharField(max_length=100)
     email = models.EmailField()
-    website = models.URLField(blank=True, verify_exists=True)
+    website = models.URLField(blank=True)
     comments = models.TextField(u"Comments")
     status = models.CharField(max_length=100, choices=COMMENT_STATUS_CHOICES, default=APPROVED)
 

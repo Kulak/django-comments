@@ -11,7 +11,7 @@ def comment_form(context, obj):
 
     initial={
         'object_id':obj.id,
-        'content_type':ContentType.objects.get(app_label=obj._meta.app_label,name=obj._meta.module_name).id
+        'content_type':ContentType.objects.get(app_label=obj._meta.app_label, model=obj._meta.module_name).id
     }
     # 
     # if context['user_info']['remember'] != False:
