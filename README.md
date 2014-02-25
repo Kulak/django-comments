@@ -1,3 +1,5 @@
+**The original author warns that this project is no longer actively maintained or supported.**
+
 ## Overview
 
 Simple comments that can be attached to any content type. The comments start in NEW state and require manual approval for comments to get displayed on the site.
